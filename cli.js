@@ -22,7 +22,7 @@ class CLI {
                 name: "shapeType",
                 type: "list",
                 message: "Please select a base shape for the logo.",
-                choices: ["circle", "square", "triangle", "diamond", "octagon"],
+                choices: ["circle", "square", "triangle"],
             },
             {
                 name: "shapeColor",
@@ -39,14 +39,6 @@ class CLI {
 
                 case "triangle" : 
                 shape = new Triangle();
-                break;
-
-                case "diamond" : 
-                shape = new Diamond();
-                break;
-                
-                case "octagon" : 
-                shape = new Octagon();
                 break;
 
                 default:
